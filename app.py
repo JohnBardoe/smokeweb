@@ -29,3 +29,7 @@ def submit():
     with open(name, 'w') as f:
         f.write(json.dumps(form))
     send_email(send_to, json.dumps(form))
+
+
+if __name__ == '__main__':
+    app.run(port=5000)
