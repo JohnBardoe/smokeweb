@@ -6,5 +6,5 @@ services:
       context: ./
       network: host
     ports:
-      - '8000:5000'
+      - '80:5000'
     
