@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=50b29913-77b8-476b-811c-77f0ca4a2e7b&amp;&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper pt-5">
+      <main class="s-main">
+        <div class="tf-page">
+          <div class="container"> 
+            <div class="t-form"> 
+              <div class="t-form__form">
+                <form>
+                  <div class="block mt-6">  
+                    <div class="row">
+                      <div class="col-4 col-lg-3">
+                        <div class="block-header">
+                          <div class="h3">Плательщик          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3"> 
+                        <div class="label input-level">ФИО</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-row"> 
+                          <div class="col-md-4">
+                            <div class="input-block warning">
+                              <input class="input-control" type="text" name="" placeholder="Фамилия" autocomplete="family-name" value=""><span class="note">Укажите фамилию</span>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="input-block">
+                              <input class="input-control" type="text" name="" placeholder="Имя" autocomplete="given-name" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="input-block">
+                              <input class="input-control" type="text" name="" placeholder="Отчество" autocomplete="additional-name"><span class="note">Заполнено неправильно</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block mt-6">  
+                    <div class="row mb-3">
+                      <div class="col-4 col-lg-3">
+                        <div class="block-header">
+                          <div class="h3">Пациент  </div>
+                        </div>
+                      </div>
+                      <div class="col-8 col-lg-9"> 
+                        <div class="row"> 
+                          <div class="col-auto">
+                            <label class="checkbox">
+                              <input type="checkbox" name="patient-person" value="1"><span class="check">✓</span><span class="text">ФИО пациента такие же, как&nbsp;и&nbsp;у&nbsp;плательщика</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3"> 
+                        <div class="label input-level">ФИО</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-row"> 
+                          <div class="col-md-4">
+                            <div class="input-block">
+                              <input class="input-control" type="text" name="" placeholder="Фамилия" autocomplete="family-name" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="input-block">
+                              <input class="input-control" type="text" name="" placeholder="Имя" autocomplete="given-name" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="input-block">
+                              <input class="input-control" type="text" name="" placeholder="Отчество" autocomplete="additional-name">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="label input-level">Дата рождения</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-row"> 
+                          <div class="col-md-6 col-lg-4">
+                            <div class="input-block">
+                              <input class="input-control input-control-date" type="text" name="dob" placeholder="" autocomplete="dob" value="" readonly="readonly"><span class="note">Заполнено неправильно</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block"> 
+                    <div class="row">
+                      <div class="col-lg-3"> 
+                        <div class="label input-level">Контактный телефон</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-row"> 
+                          <div class="col-lg-9">
+                            <div class="input-block">
+                              <input class="input-control" name="phone" placeholder="" autocomplete="phone"><span class="note">Заполнено неправильно</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block complete">
+                    <div class="row">
+                      <div class="col-lg-3"> 
+                        <div class="label input-level">Эл. почта</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-row"> 
+                          <div class="col-lg-9">
+                            <div class="input-block">
+                              <input class="input-control input-control-email" type="email" name="" placeholder="" autocomplete="" value="test@test.ru">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block"> 
+                    <div class="row">
+                      <div class="col-lg-3">                         </div>
+                      <div class="col-lg-9">
+                        <label class="checkbox">
+                          <input type="checkbox" name="" value="1" checked><span class="check">✓</span><span class="text">Пациент с&nbsp;раком лёгкого</span>
+                        </label>
+                        <div> 
+                          <label class="radiobox">
+                            <input type="radio" name="smoker" value="1"><span class="check"></span><span class="text">Некурящий</span>
+                          </label>
+                          <label class="radiobox">
+                            <input type="radio" name="smoker" value="1" checked><span class="check"></span><span class="text">Курящий</span>
+                          </label>
+                          <div class="checkbox-extension"> 
+                            <div class="extra-input"><span>Сигарет в день </span>
+                              <div class="input-block">
+                                <input class="input-control" type="" name="" placeholder="" autocomplete="" value="3"><span class="note">Заполнено неправильно                                                     </span>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="radiobox">
+                            <input type="radio" name="smoker" value="1"><span class="check"></span><span class="text">Бывший курильщик</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block mt-6">  
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="block-header">
+                          <div class="h3">Выписка из истории болезни          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3"> 
+                        <div class="label input-level">Файл</div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="input-block">
+                          <input class="input-control input-file" type="file" name="history[]" value="" accept=".jpg, .png, .doc, .docx, .pdf, .zip, .rar" multiple=""><small class="input-desc">Не более 20 МБ, jpg, png, doc, docx, pdf, zip, rar</small><span class="note">Заполнено неправильно</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block mt-6">  
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="block-header">
+                          <div class="h3">Номер(а) блока(ов) для отправки </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4 mb-sm-0">
+                      <div class="col-sm-6">  
+                        <div class="input-block">
+                          <input class="input-control" type="text" name="" placeholder="№" autocomplete="" value=""><span class="note">Заполнено неправильно   </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-link">Добавить номер блока            </button>
+                  </div>
+                  <div class="block mt-6"> 
+                    <div class="tf-block__read"> 
+                      <div>
+                        <p class="h4">Информированное согласие на&nbsp;проведение молекулярно-генетического исследования опухоли </p>
+                        <p class="mt-4"> <b>Все личные данные,</b></p>
+                        <p>касающиеся вас и&nbsp;ваших родственников, также как и&nbsp;результаты генетического исследования, проводимые АО&nbsp;&laquo;Ферст Генетикс&raquo;, строго конфиденциальны и&nbsp;не&nbsp;могут быть переданы другим лицам иначе, как с&nbsp;вашего согласия. Вы&nbsp;можете отозвать своё согласие по&nbsp;одному или всем нижеприведенным пунктам в&nbsp;любое время без объяснения дополнительных причин.</p>
+                        <p>Я, клиент <b>Иванов Иван Иванович</b> выражаю своё согласие на&nbsp;проведение генетического исследования, а&nbsp;также согласен (сна) на&nbsp;то, что:</p>
+                        <ul class="ul-check">
+                          <li>При необходимости результаты исследований могут быть использованы для медико-генетического консультирования или генетического обследования других членов моей семьи.</li>
+                          <li>При необходимости результаты исследований могут быть запрошены моим лечащим врачом и&nbsp;выданы ему для дальнейшей тактики лечения и&nbsp;обследования.</li>
+                        </ul>
+                        <p class="h4 mt-5"><b>Согласие на&nbsp;обработку персональных данных</b></p>
+                        <p>Я, нижеподписавшаяся (подписавшийся) <b>Иванов Иван Иванович</b> (<b>00.00.0000</b> г.р.)    </p>
+                        <p>Я&nbsp;уведомлен, что обезличенная информация из&nbsp;образцов тканей и&nbsp;жидкостей моего организма может быть использована в&nbsp;научно-медицинских целях и&nbsp;НИОКР.</p>
+                        <p>Настоящее согласие дано мной <b>10.02.2021</b> года и&nbsp;действует бессрочно.</p>
+                        <p>Условием прекращения обработки персональных данных по&nbsp;данному Согласию является получение Учреждением-Оператором моего письменного уведомления об&nbsp;отзыве Согласия на&nbsp;обработку моих персональных данных.</p>
+                        <p>Настоящее Согласие вступает в&nbsp;силу со&nbsp;дня его подписания и&nbsp;действует в&nbsp;течение неопределенного срока. </p>
+                      </div>
+                    </div>
+                    <label class="checkbox">
+                      <input type="checkbox" name="" value=""><span class="check">✓</span><span class="text">Я&nbsp;прочитал/прочитала &laquo;Информированное согласие на&nbsp;проведение молекулярно-генетического исследования опухоли&raquo; и&nbsp;&laquo;Согласие на&nbsp;обработку персональных данных&raquo;</span>
+                    </label>
+                  </div>
+                  <div class="block-agreement mt-4"> 
+                    <label class="checkbox">
+                      <input type="checkbox" name="" value=""><span class="check">✓</span><span class="text">Принимаю условия <a href="" target="_blank">договора</a></span>
+                    </label>
+                  </div>
+                  <div class="block-submit mt-5 mt-lg-7">                           
+                    <div class="btn-block">
+                      <div class="row align-items-center"> 
+                        <div class="col-12 col-sm-6 col-lg-6 mb-5 mb-lg-0">
+                          <button class="btn btn-big" type="submit" disabled>Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
